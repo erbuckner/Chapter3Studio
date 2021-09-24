@@ -8,7 +8,9 @@ namespace Chapter3Studio
         static void Main(string[] args)
         {
             //initilize string
-            string stringInput = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan sem ut ligula scelerisque sollicitudin. Ut at sagittis augue. Praesent quis rhoncus justo. Aliquam erat volutpat. Donec sit amet suscipit metus, non lobortis massa. Vestibulum augue ex, dapibus ac suscipit vel, volutpat eget massa. Donec nec velit non ligula efficitur luctus.";
+            //string stringInput = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan sem ut ligula scelerisque sollicitudin. Ut at sagittis augue. Praesent quis rhoncus justo. Aliquam erat volutpat. Donec sit amet suscipit metus, non lobortis massa. Vestibulum augue ex, dapibus ac suscipit vel, volutpat eget massa. Donec nec velit non ligula efficitur luctus.";
+            Console.WriteLine("Please enter a string");
+            string stringInput= Console.ReadLine().ToLower();
 
             //Turn string into array of characters
             char[] charactersInString = stringInput.ToCharArray();
@@ -33,7 +35,7 @@ namespace Chapter3Studio
 
             foreach (KeyValuePair<char, int> i in charDictionary)
             {
-                Console.WriteLine("Key: {0}, Value: {1}", i.Key, i.Value);
+                Console.WriteLine("{0}: {1}", i.Key, i.Value);
             }
         }
     }
